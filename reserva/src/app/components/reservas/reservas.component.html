@@ -9,12 +9,19 @@
   <br>
   <button type="button" class="btn btn-outline-primary" type="submit">Reservar</button>
 </form>
-<h1>Reservaciones </h1>
-<ul>
-  <li *ngFor="let reservation of reservations">
-    {{ reservation.date }} - {{ reservation.time }}
-  </li>
-</ul>
+<h1>...RESERVACIONES...</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+          <th scope="col">DIA</th>
+          <th scope="col">FECHA</th>
+        </tr>
+      </thead>
+      <tr *ngFor="let reservation of reservations">
+        <th >{{ reservation.date }}</th>
+        <td>{{ reservation.time }}</td>
+      </tr>
+</table>
 <div *ngIf="alertMessage" class="alert" [ngClass]="'alert-' + alertType" role="alert">
   {{ alertMessage }}
 </div>
