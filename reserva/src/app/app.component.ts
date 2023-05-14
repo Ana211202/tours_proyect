@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  X = [1,2];
   handleSearch(value: string){
     console.log(value)
-    
   }
   
 }

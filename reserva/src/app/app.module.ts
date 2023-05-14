@@ -9,6 +9,8 @@ import { SearchComponent } from './components/search/search.component';
   
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { VideoPipe } from './components/pipes/video.pipe';
+
 
 
 
@@ -18,7 +20,10 @@ import { MatInputModule } from '@angular/material/input';
     AppComponent,
     GaleriaComponent,
     ReservasComponent,
-    SearchComponent
+    SearchComponent,
+    VideoPipe,
+    
+    
   ],
   imports: [
     BrowserModule, FormsModule, ReactiveFormsModule
